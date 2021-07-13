@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from "react";
-import {Text} from "react-native";
-import {lastSeenProps} from "./types";
+import React, { useEffect, useState } from "react";
+import { Text } from "react-native";
+import { lastSeenProps } from "./types";
 
 const LastSeenComponent = (props: lastSeenProps) => {
   const { lastSeenTimestamp }: { lastSeenTimestamp: number} = props;
@@ -18,7 +18,7 @@ const LastSeenComponent = (props: lastSeenProps) => {
   }, []);
 
   if (timeElapsed > 60) {
-    return <Text>Last seen: {Math.floor(timeElapsed / 60)} minutes ago.</Text>
+    return <Text>Last seen: { Math.floor(timeElapsed / 60) } minutes ago.</Text>
   }
 
   return <Text>Last seen: {timeElapsed} seconds ago.</Text>

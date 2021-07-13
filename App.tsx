@@ -6,7 +6,7 @@ import LastSeenComponent from "./LastSeenComponent";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>Hello there!</Text>
       <StatusBar style="auto" />
       <LastSeenComponent lastSeenTimestamp={Math.floor(Date.now()/1000)} />
     </View>
